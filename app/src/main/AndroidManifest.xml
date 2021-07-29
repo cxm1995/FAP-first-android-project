@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.DayNight"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".FunHongzhaActivity"/>
+        <activity android:name=".DatabaseActivity" />
+        <activity android:name=".RippleActivity" />
+        <activity android:name=".AnimationActivity" />
+        <activity android:name=".broadcast.BroadcastActivity2" />
+        <activity android:name=".broadcast.BroadastActivity" />
+        <activity android:name=".game.GameActivity" />
+        <activity android:name=".datastorage.FileActivity" />
+        <activity android:name=".datastorage.SharedPreferencesActivity" />
+        <activity android:name=".datastorage.DataStorageActivity" />
+        <activity android:name=".HandlerDemoActivity" />
+        <activity android:name=".HandlerActivity" />
+        <activity android:name=".EventActivity" />
+        <activity android:name=".PopupWindowActivity" />
+        <activity android:name=".CustomDialogActivity" />
+        <activity android:name=".ProgressActivity" />
+        <activity android:name=".DialogActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ToastActivity" />
+        <activity android:name=".fragment.ContainerActivity" />
+        <activity android:name=".jump.DActivity" />
+        <activity android:name=".jump.CActivity" />
+        <activity android:name=".LifeCycleActivity" />
+        <activity
+            android:name=".jump.BActivity"
+            android:label="B"
+            android:launchMode="standard" />
+        <activity
+            android:name=".jump.AActivity"
+            android:label="A"
+            android:launchMode="standard">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="com.example.myapplication.jump.AActivity.ActionName" /> -->
+            <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".WebViewActivity" />
+        <activity android:name=".recyclerview.XRecyclerViewActivity" />
+        <activity android:name=".recyclerview.StaggerRecyclerViewActivity" />
+        <activity android:name=".recyclerview.GridRecyclerViewActivity" />
+        <activity android:name=".recyclerview.HorRecyclerViewActivity" />
+        <activity android:name=".recyclerview.LinearRecyclerViewActivity" />
+        <activity android:name=".recyclerview.RecyclerViewActivity" />
+        <activity android:name=".gridview.GridViewActivity" />
+        <activity android:name=".listview.ListViewActivity" />
+        <activity android:name=".ImageViewActivity" />
+        <activity android:name=".CheckBoxActivity" />
+        <activity android:name=".RadioActivity" />
+        <activity android:name=".Fun" />
+        <activity android:name=".EditViewActivity" />
+        <activity android:name=".ButtonActivity" />
+        <activity android:name=".TextViewActivity" />
+        <activity
+            android:name=".UiActivity"
+            android:label="我是标题" />
+    </application>
+
+</manifest>
