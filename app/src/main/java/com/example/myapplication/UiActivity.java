@@ -39,6 +39,7 @@ public class UiActivity extends AppCompatActivity {
     private Button mBtnProgress;
     private Button mBtnCustomDialog;
     private Button mBtnPopupWindow;
+    private Button mBtnViewPage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -114,6 +115,7 @@ public class UiActivity extends AppCompatActivity {
         mBtnProgress = findViewById(R.id.btn_progress);
         mBtnCustomDialog = findViewById(R.id.btn_custome_dialog);
         mBtnPopupWindow = findViewById(R.id.btn_pop);
+        mBtnViewPage = findViewById(R.id.btn_viewpage);
         setListener();
     }
 
@@ -138,6 +140,7 @@ public class UiActivity extends AppCompatActivity {
         mBtnProgress.setOnClickListener(onclick);
         mBtnCustomDialog.setOnClickListener(onclick);
         mBtnPopupWindow.setOnClickListener(onclick);
+        mBtnViewPage.setOnClickListener(onclick);
     }
 
     private class Onclick implements View.OnClickListener {
@@ -200,7 +203,9 @@ public class UiActivity extends AppCompatActivity {
                 case R.id.btn_pop:
                     intent = new Intent(UiActivity.this, PopupWindowActivity.class);
                     break;
-
+                case R.id.btn_viewpage:
+                    intent = new Intent(UiActivity.this, ViewPageActivity.class);
+                    break;
             }
             startActivity(intent);
         }
